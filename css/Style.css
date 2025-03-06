@@ -1,0 +1,113 @@
+/*body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('Images/Benjie photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black; /* Ensures text is visible on the image */
+    min-height: 100vh; /* Ensures it covers the full viewport */
+    position: relative; /* Keeps elements positioned correctly */
+}
+
+/* Make sure all content is layered on top of the background */
+.content {
+    position: relative; /* Ensures content is on top of the background */
+    z-index: 1; /* Puts content above the background */
+}
+
+/* Optional: Style navigation buttons */
+nav {
+    background: rgba(0, 0, 0, 0); /* Semi-transparent black background for better readability */
+    padding: 10px;
+    position: fixed; /* Makes it stay at the top */
+    top: 0;
+    left: 150px;
+    width: 100%;
+    z-index: 2; /* Higher than content to ensure it stays on top */
+}
+
+nav button {
+    background: whitesmoke;
+    color: black;
+    padding: 25px 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 70px;
+    border-radius: 40px;
+}
+
+/* Optional: Style the footer */
+footer {
+    background: rgba(0, 0, 0, 0.5); /* Transparent background for visibility */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; /* Higher than content to ensure it stays on top */
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: .5em;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 5.1em;
+    line-height: 1em;
+    letter-spacing: .03em;
+    margin-bottom: 5px;
+    }
+    h4 {
+        font-weight: normal;
+        font-size: .7em;
+        letter-spacing: .4em;
+        margin-bottom: 9px;
+        line-height: 1em;
+      }
+      p {
+        font-size: .9em;
+        line-height: 1.8em;
+        letter-spacing: .103em;
+        margin-bottom: 15px;
+      }
+
+    img {
+      display: inline-block;
+      margin: 0 40px;
+    }
+    #section {
+        background: url('Images/Benjie photo.jpg');
+        background-size: 100%;
+        text-align: center;
+      } 
+      #title-box {
+        width: 252px;
+        height: 165px;
+        background: rgba(247,211,27,1);
+        margin-left: 163px;
+        padding-top: 25px;
+      }
+         
+  body {
+    background: rgb(79,79,79); /* Old browsers */
+    background: url ('Images/Benjie photo.jpg');
+    background: -moz-linear-gradient(top,  rgba(79,79,79,1) 0%, rgba(19,19,19,1) 57%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,79,79,1)), color-stop(57%,rgba(19,19,19,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#131313',GradientType=0 ); /* IE6-8 */
+    font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
+    font-size: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }

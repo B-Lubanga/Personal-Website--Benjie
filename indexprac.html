@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjie's Website</title>
+    <link rel="stylesheet" href="css/tests.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <button onclick="scrollToSection('home')">HOME</button>
+            <button onclick="scrollToSection('about')">ABOUT</button>
+            <button onclick="scrollToSection('hobbies')">HOBBIES</button>
+            <button onclick="scrollToSection('contact')">CONTACT</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section">
+        <div id="title-box">
+            <h1>BENJAMIN LUBANGA</h1>
+            <h4>| Software Developer |</h4>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>ABOUT</h2>
+        <p>Hi, I’m Benjamin Lubanga, a fullstack development graduate from Moringa Tech School with a background in mechanical engineering. I specialize in frontend and backend development, working with HTML, CSS, React for user interfaces, and Python, JavaScript for backend systems to build dynamic, scalable applications.</p>
+        <p>I’m passionate about backend engineering and leveraging technology to solve real-world challenges. My interests extend to AI and data analysis, which I believe can drive smarter, data-driven decision-making. I’m also deeply committed to sustainability and environmental impact, aligning with the Sustainable Development Goals (SDGs).</p>
+        <p>My background in mechanical engineering, combined with fullstack development expertise, gives me a strong analytical and problem-solving approach. I thrive in collaborative environments, constantly seek innovative solutions, and explore emerging technologies to optimize backend systems.</p>
+        <p>I’m seeking backend engineering roles in mid-level startups focused on innovation, sustainability, and impactful technology. Let’s connect and build something meaningful together.</p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <h2>HOBBIES</h2>
+        <p>I aspire to be an adventure biker, drawn to the thrill of discovering remote places and experiencing life beyond the familiar. I find joy in cycling, swimming, and capturing the beauty of nature through photography, focusing on landscapes and environmental conservation.</p>
+        <p>Beyond the outdoors, I enjoy playing chess, reading books, and watching documentaries, always seeking to expand my knowledge. I also have a deep love for cars, appreciating both their engineering and the freedom they represent.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>CONTACT</h2>
+        <p>
+            <img src="Images/gmail.png" alt="Gmail Icon"> Email:
+            <a href="mailto:lubangabenjami@gmail.com">lubangabenjami@gmail.com</a>
+        </p>
+        <p>Phone: 0712 774 613</p> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>SOCIAL MEDIA</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/benjamin-lubanga-651b20129/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/?next=%2F" target="_blank">Instagram</a></li>
+        </ul> 
+        <p>© 2025 Benjamin Lubanga. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>    
+
+</body>
+</html>
