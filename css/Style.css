@@ -1,113 +1,140 @@
-/*body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background: url('Images/Benjie photo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: black; /* Ensures text is visible on the image */
-    min-height: 100vh; /* Ensures it covers the full viewport */
-    position: relative; /* Keeps elements positioned correctly */
+    background: url("../Images/Benjie photo.jpg") no-repeat center center fixed;
+    /* background-size: ; */
+    background-size: auto;
+    color: black;
+    min-height: 100vh; /* Ensures full viewport coverage */
+    position: relative;
 }
 
-/* Make sure all content is layered on top of the background */
+/* Content Layer to Ensure Visibility */
 .content {
-    position: relative; /* Ensures content is on top of the background */
-    z-index: 1; /* Puts content above the background */
+    position: relative;
+    z-index: 1; /* Ensures content stays above the background */
 }
 
-/* Optional: Style navigation buttons */
+/* Navigation Bar */
 nav {
-    background: rgba(0, 0, 0, 0); /* Semi-transparent black background for better readability */
+    background: rgba(0, 0, 0, 0); /* Semi-transparent black */
     padding: 10px;
-    position: fixed; /* Makes it stay at the top */
-    top: 0;
-    left: 150px;
+    position: fixed;
+    top: 100px;
+    left: 0;
     width: 100%;
-    z-index: 2; /* Higher than content to ensure it stays on top */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
+/* Navigation Buttons */
 nav button {
     background: whitesmoke;
     color: black;
-    padding: 25px 7px;
+    padding: 30px 10px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
-    margin: 70px;
-    border-radius: 40px;
+    font-size: 16px;
+    border-radius: 28px;
+    transition: 0.9s;
+    margin: 10px 10;
 }
 
-/* Optional: Style the footer */
+nav button:hover {
+    background: rgba(247, 211, 27, 1);
+    color: black;
+}
+
+/* Sections Styling */
+.section {
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about, #hobbies, #contact {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.5); /* Transparent background for visibility */
-    padding: 10px;
-    position: absolute;
+    /* text-decoration: none; */
+    background: rgba(0, 0, 0, 0);
+    padding: 100px;
+    text-align: center;
+    position: relative;
     bottom: 0;
     width: 100%;
-    z-index: 2; /* Higher than content to ensure it stays on top */
 }
 
+/* Title Box */
+#title-box {
+    width: 280px;
+    height: 180px;
+    background: rgba(247, 211, 27, 1);
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Headings */
 h1 {
     font-size: 3em;
-    line-height: 1em;
-    letter-spacing: .5em;
-    margin-bottom: 5px;
-  }
-  h2 {
-    font-size: 5.1em;
-    line-height: 1em;
-    letter-spacing: .03em;
-    margin-bottom: 5px;
-    }
-    h4 {
-        font-weight: normal;
-        font-size: .7em;
-        letter-spacing: .4em;
-        margin-bottom: 9px;
-        line-height: 1em;
-      }
-      p {
-        font-size: .9em;
-        line-height: 1.8em;
-        letter-spacing: .103em;
-        margin-bottom: 15px;
-      }
+    letter-spacing: 0.1em;
+}
 
-    img {
-      display: inline-block;
-      margin: 0 40px;
+h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+}
+
+h4 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+}
+
+/* Images */
+img {
+    display: inline-block;
+    margin: 0 20px;
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
-    #section {
-        background: url('Images/Benjie photo.jpg');
-        background-size: 100%;
-        text-align: center;
-      } 
-      #title-box {
-        width: 252px;
-        height: 165px;
-        background: rgba(247,211,27,1);
-        margin-left: 163px;
-        padding-top: 25px;
-      }
-         
-  body {
-    background: rgb(79,79,79); /* Old browsers */
-    background: url ('Images/Benjie photo.jpg');
-    background: -moz-linear-gradient(top,  rgba(79,79,79,1) 0%, rgba(19,19,19,1) 57%, rgba(19,19,19,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,79,79,1)), color-stop(57%,rgba(19,19,19,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#131313',GradientType=0 ); /* IE6-8 */
-    font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
-    font-size: 100%;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+
+    nav button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}

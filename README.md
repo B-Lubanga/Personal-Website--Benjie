@@ -4,7 +4,7 @@ These are the guidelines of what i need to check when creating the personal webs
 
 Commit 1: "Initialize Repository"
 Commit 2: "Finish website"
-A good history might look closer to this:
+
 
 Commit 1: "Initialize Repository"
 Commit 2: "Add basic HTML, CSS and JavaScript files"
